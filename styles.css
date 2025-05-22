@@ -1,0 +1,16 @@
+/* 全局字体调整 */
+body {
+  font-size: 16px;
+}
+/* 在自定义 CSS 文件中 */
+.post-content {
+  font-size: 17px; /* 正文字体 */
+  line-height: 1.8; /* 行高 */
+}
+/* 标题字体层级 */
+.post-content h1 {
+  font-size: 1.8em;
+}
+.post-content h2 {
+  font-size: 1.5em;
+}

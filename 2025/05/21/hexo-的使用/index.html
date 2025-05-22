@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Hexo 的使用涉及到了好多方面，有种感觉就是有好多东西需要我去了解、学习。创建这个博客是为了让自己输出，另一个因素是看到有些人也在用博客写作，并且通过看他们的博客我也了解到了许多东西，其次我想这可以锻炼我自己，比如写作能力，表达能力，打字能力……。然后就是能让自己养成好习惯，在某些时间节点回顾反思自己的所作所为，总结经验。最后。我也不奢求自己写的内容会帮助他人，但如果对你有所帮助，那将会是我的高">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo 的使用">
+<meta property="og:url" content="http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:site_name" content="MyBlog">
+<meta property="og:description" content="Hexo 的使用涉及到了好多方面，有种感觉就是有好多东西需要我去了解、学习。创建这个博客是为了让自己输出，另一个因素是看到有些人也在用博客写作，并且通过看他们的博客我也了解到了许多东西，其次我想这可以锻炼我自己，比如写作能力，表达能力，打字能力……。然后就是能让自己养成好习惯，在某些时间节点回顾反思自己的所作所为，总结经验。最后。我也不奢求自己写的内容会帮助他人，但如果对你有所帮助，那将会是我的高">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-05-21T11:37:42.000Z">
+<meta property="article:modified_time" content="2025-05-22T07:10:37.516Z">
+<meta property="article:author" content="wenrenmengji">
+<meta property="article:tag" content="杂谈">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>hexo 的使用</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/tags/">tags</a></li><!--
+     --><!--
+       --><li><a href="/archive/">archive</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2025/05/22/hello-world/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2025/03/24/%E7%8C%AB%E5%92%AA/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&text=hexo 的使用"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&title=hexo 的使用"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&is_video=false&description=hexo 的使用"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=hexo 的使用&body=Check out this article: http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&title=hexo 的使用"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&title=hexo 的使用"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&title=hexo 的使用"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&title=hexo 的使用"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&name=hexo 的使用&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&t=hexo 的使用"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js"><span class="toc-number">1.</span> <span class="toc-text">Node.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%EF%BC%9A%E6%9A%82%E6%97%B6%E6%9C%AA%E9%81%87%E5%88%B0%E3%80%82"><span class="toc-number">1.1.</span> <span class="toc-text">问题：暂时未遇到。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">2.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">问题：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cmd"><span class="toc-number">3.</span> <span class="toc-text">cmd</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%EF%BC%9A%E6%9A%82%E6%97%B6%E6%9C%AA%E9%81%87%E5%88%B0%E3%80%82-1"><span class="toc-number">3.1.</span> <span class="toc-text">问题：暂时未遇到。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#code"><span class="toc-number">4.</span> <span class="toc-text">code</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C"><span class="toc-number">4.1.</span> <span class="toc-text">操作:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Code-%E5%86%85%E7%BD%AE%E7%9A%84-Git-%E7%8A%B6%E6%80%81%E6%A0%87%E8%AF%86%E5%8A%9F%E8%83%BD"><span class="toc-number">4.2.</span> <span class="toc-text">Code 内置的 Git 状态标识功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-number">5.</span> <span class="toc-text">Hexo</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        hexo 的使用
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">wenrenmengji</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2025-05-21T11:37:42.000Z" class="dt-published" itemprop="datePublished">2025-05-21</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/%E6%9D%82%E8%B0%88/" rel="tag">杂谈</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p><strong>Hexo</strong> 的使用涉及到了好多方面，有种感觉就是有好多东西需要我去了解、学习。创建这个博客是为了让自己输出，另一个因素是看到有些人也在用博客写作，并且通过看他们的博客我也了解到了许多东西，其次我想这可以锻炼我自己，比如写作能力，表达能力，打字能力……。然后就是能让自己养成好习惯，在某些时间节点回顾反思自己的所作所为，总结经验。最后。我也不奢求自己写的内容会帮助他人，但如果对你有所帮助，那将会是我的高光时刻。帮助别人，似乎也是可以实现某些价值的，对吧。</p>
+<p>回到这篇文章的主线，在我的本地终端安装、使用此 SSG 时用到了好多方面的东西，算是只是吧。我对此创建了一个 xmind 文件，当中的内容我会用文字表述，具体如下：</p>
+<hr>
+<h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>这里我只了解到了<strong>npm</strong>、<strong>cnpm</strong>，之后就没有遇到相关方面的问题了，所以再往后详细的内容就没有了。以后有时间我会详细了解与这两个关键词相关的内容。</p>
+<h3 id="问题：暂时未遇到。"><a href="#问题：暂时未遇到。" class="headerlink" title="问题：暂时未遇到。"></a><em><strong>问题</strong></em>：暂时未遇到。</h3><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>对于 Git 我想说的是在这个月我看完了《Pro Git》这本书，学到了关于 Git 的相关命令，笔记放在了软件 Notion 里。现在想想，当时对 Git 非常感兴趣，在 Google 中找到了开源仓库，并且找到了这本书的作者 Scott Chacon （斯科特·查孔）以及他的博客，非常奇妙。<br>当时使用 Git 时，我将 master 修改成了 main 。有两种方法：一种是直接编辑 config 文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[init]</span><br><span class="line">    defaultBranch = main  # &lt;-- 新增这一部分</span><br></pre></td></tr></table></figure>
+
+<p>验证：<code>git config --global init.defaultBranch</code>，返回“main”<br>另一种是在 cmd 运行<code>git config --global init.defaultBranch main</code>，验证同上。</p>
+<p>与命令行 CLI 相关的有这些：</p>
+<ul>
+<li>上下箭头切换历史命令</li>
+<li>pwd 显示当前目录</li>
+<li>ls 输出当前目录的所以文件</li>
+<li>Git 分页器，按 Q 退出分页器</li>
+<li>切换目录主要使用 cd 命令。cd &lt;目标路径&gt;-切换目录。cd . -显示当前目录 。cd ~ -用户主目录: &#x2F;c&#x2F;Users&#x2F;21199</li>
+</ul>
+<h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a><em><strong>问题</strong></em>：</h3><ul>
+<li>在 git bash 第一行显示的是“21199@▒▒▒ŵ▒▒ڱ▒ MINGW64 ~&#x2F;Desktop”，部分内容看不清楚——解决：检查系统区域设置（Windows）打开 控制面板 → 区域 → 管理 → 更改系统区域设置。勾选 Beta: 使用 Unicode UTF-8 提供全球语言支持 → 重启电脑。</li>
+<li>Git 命令中包含 {},出现错误,导致命令运行不了。——解决：将 {} 加引号。</li>
+</ul>
+<h2 id="cmd"><a href="#cmd" class="headerlink" title="cmd"></a>cmd</h2><details open><summary>与命令行</summary>
+    <ul>
+        <li>C:/D:/E:（切换磁盘</li>
+        <li>md xxx（创建文件夹 mkdir（创建目录</li>
+        <li>cd xxx（切换文件夹</li>
+        <li>cd ..（返回上一级目录。可以嵌套如../../.. </li>
+        <li>cd ../../../../..（返回多级目录。（方法二-绝对路径跳转：cd </li>
+        <li>D：\目标路径</li>
+        <li>cd -（快速返回上一个目录</li>
+        <li>cd（直接退回到用户主目录</li>
+        <li>rd（rmdir xxx（删除文件夹</li>
+        <li>rd /s /q "父文件夹\子文件夹"（递归删除子文件夹。/s（递归删除。/q（静默删除，不提示确认。（删除文件夹里的文件夹）</li>
+        <li>cd（chdir或者echo %cd%（显示当前目录</li>
+        <li>上下箭头切换历史命令</li>
+        <li>在输入不完整的文件名后敲击Tab键自动补全（目录的制表符补全
+        dir（显示当前目录的所有文件 </li>
+        <li>code .（用vscode打开当前目录</li>
+        <li>chcp（编码方式 。输出示“Active code page：65001” </li>
+        <li>taskkill /IM "程序名.exe" /F（关闭进程</li>
+        <li>ping</li>
+        <li>break > filename.txt（新建文件, 但不能创建以 . 开头的文件。——在git环境中, 可以用 ni .gitignore 创建 .gitignore文件
+        </li>
+    </ul>
+        
+        
+        
+        
+        
+        
+        
+        
+               
+</details>
+
+<h3 id="问题：暂时未遇到。-1"><a href="#问题：暂时未遇到。-1" class="headerlink" title="问题：暂时未遇到。"></a><em><strong>问题</strong></em>：暂时未遇到。</h3><h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><h3 id="操作"><a href="#操作" class="headerlink" title="操作:"></a>操作:</h3><ul>
+<li>Ctrl + C（调出集成终端——Ctrl+Shift+~ 创建多个终端</li>
+<li>Ctrl + F（单个文件搜索，匹配到的结果高亮显示——Ctrl + Shift + F 全局搜索</li>
+</ul>
+<h3 id="Code-内置的-Git-状态标识功能"><a href="#Code-内置的-Git-状态标识功能" class="headerlink" title="Code 内置的 Git 状态标识功能"></a>Code 内置的 Git 状态标识功能</h3><ul>
+<li>yellow M（modified 已修改未暂存</li>
+<li>green M（已修改且已暂存</li>
+<li>源代码管理器（Ctrl+Shift+G<br><em><strong>问题</strong></em>：</li>
+<li>code里的终端为何是Windows操作系统里的终端？——vscode终端实际上是一个”嵌入式终端模拟器“，它直接调用系统中默认配置的命令行工具，而不是自己实现一个独立的终端。牵扯系统集成、环境变量继承、一致性。</li>
+<li>在vscod中运行hexo服务器之后，就不能在终端输入其他命令。——“Ctrl+SHift+ &#96; “（新建一个终端窗口。（原终端可以继续运行“hexo server，新终端可以自由输入其他的command”）、另一种方法是<code>Start-Process -NoNewWindow hexo server ”/“hexo server &amp;</code>（后台运行hexo服务器。(关闭Code 后后台进程可能不会自动终止，需手动结束。)</li>
+</ul>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><details open><summary>命令</summary>
+    <ul>
+        <li>hexo new （layout）（titlt）</li>
+            <ul>
+                <li>hexo new page --path about/me "about" #以上命令会创建一个 source/about/me.md 文件，同时 Front Matter 中的 title 为 "About me"， title 是必须指定的！！！</li>
+                <li>hexo new "文章" #会在 source/_post/文章.md 文件</li>
+            </ul>
+        <li>hexo generate</li>
+            #生成静态文件。
+        <li>hexo deploy</li> 
+            #部署网站，在此之前需要先运行 hexo generate 后生成静态文件。
+        <li>hexo clean</li>
+            #清除缓存文件 (db.json) 和已生成的静态文件(public) 。       
+    </ui>
+</details>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/tags/">tags</a></li>
+        
+          <li><a href="/archive/">archive</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js"><span class="toc-number">1.</span> <span class="toc-text">Node.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%EF%BC%9A%E6%9A%82%E6%97%B6%E6%9C%AA%E9%81%87%E5%88%B0%E3%80%82"><span class="toc-number">1.1.</span> <span class="toc-text">问题：暂时未遇到。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">2.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">问题：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cmd"><span class="toc-number">3.</span> <span class="toc-text">cmd</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%EF%BC%9A%E6%9A%82%E6%97%B6%E6%9C%AA%E9%81%87%E5%88%B0%E3%80%82-1"><span class="toc-number">3.1.</span> <span class="toc-text">问题：暂时未遇到。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#code"><span class="toc-number">4.</span> <span class="toc-text">code</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C"><span class="toc-number">4.1.</span> <span class="toc-text">操作:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Code-%E5%86%85%E7%BD%AE%E7%9A%84-Git-%E7%8A%B6%E6%80%81%E6%A0%87%E8%AF%86%E5%8A%9F%E8%83%BD"><span class="toc-number">4.2.</span> <span class="toc-text">Code 内置的 Git 状态标识功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-number">5.</span> <span class="toc-text">Hexo</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&text=hexo 的使用"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&title=hexo 的使用"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&is_video=false&description=hexo 的使用"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=hexo 的使用&body=Check out this article: http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&title=hexo 的使用"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&title=hexo 的使用"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&title=hexo 的使用"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&title=hexo 的使用"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&name=hexo 的使用&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2025/05/21/hexo-%E7%9A%84%E4%BD%BF%E7%94%A8/&t=hexo 的使用"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2025
+    wenrenmengji
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/tags/">tags</a></li><!--
+     --><!--
+       --><li><a href="/archive/">archive</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
